@@ -1,0 +1,14 @@
+/* Avatars */
+
+.avatar-circular{
+    vertical-align:center;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+}
+
+.avatar-rounded{
+    width:50px;
+    height:50px;
+    border-radius: 10%;
+}
