@@ -1,6 +1,6 @@
-body{
+/* body{
     margin:0;
-}
+} */
 
 /* Avatars */
 
@@ -37,3 +37,79 @@ body{
     background-color:rgb(254, 215, 215);
 }
 
+/* Badges */
+
+.badge{
+    border: 1px solid transparent;
+    background-color:gray;
+    padding: 0.1rem 0.5rem;
+    border-radius:0.2rem;
+    color:white;
+    font-weight: bold;
+}
+
+.badge-icon{
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 60px;
+    height: 60px;
+    background: #dddddd;
+    border: none;
+    border-radius: 50%;
+    margin:0.5rem 0;
+}
+
+.badge-icon:hover{
+    cursor:pointer;
+}
+
+.badge-icon:active{
+    background-color: #cccccc;
+}
+
+.icon{
+    width:30px;
+    height:30px;
+}
+
+.badge-top{
+    position:absolute;
+    top: -5px;
+    right:-5px;
+    width: 25px;
+    height: 25px;
+    background: red;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color:white;
+    border-radius:50%;
+}
+
+.badge-avatar{
+    position: relative;
+    display: flex;
+    width: 52px;
+    height: 52px;
+    background-color: rgb(41, 41, 41);
+    border:1px solid rgb(173, 173, 173);
+    border-radius: 50%;
+    justify-content:center;
+    align-items: center;
+}
+
+.badge-top-avatar{
+    position:absolute;
+    top:0px;
+    right:0px;
+    width: 13px;
+    height: 13px;
+    background-color: rgb(4, 224, 4);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color:white;
+    border-radius:50%;
+}
