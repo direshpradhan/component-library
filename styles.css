@@ -1,13 +1,14 @@
-/* body{
-    max-width: 800px;
-    margin:auto;
-} */
-
 :root{
     --primary-color: #2563EB;
     --off-white: #F3F4F6;
     --dark-gray: #6B7280;
     --gray: gray;
+}
+
+body{
+    background-color: #E5E7EB;
+    /* max-width: 800px;
+    margin:auto; */
 }
 
 /* Avatars */
@@ -50,12 +51,14 @@
 /* Badges */
 
 .badge{
-    border: 1px solid var(--gray);
+    border: 1px solid transparent;
     background-color: var(--gray);
-    padding: 0.2rem 0.7rem;
+    padding: 0.2rem 0.4rem;
     border-radius:0.2rem;
     color:white;
     font-weight: bold;
+    font-size:0.7rem;
+    text-transform: uppercase;
 }
 
 .badge-icon{
@@ -167,7 +170,7 @@
 }
 
 .btn-float{
-    position: absolute;
+    position: fixed;
     width:40px;
     height:40px;
     border-radius: 50%;
@@ -188,4 +191,89 @@
 
 .btn-float:active{
     background-color:var(--primary-color);
+}
+
+/* Cards */
+
+.card-list{
+    display:flex;
+    margin-bottom:3rem; 
+    flex-wrap: wrap;
+}
+
+.card{
+    /* border:1px solid black; */
+    position:relative;
+    width:14rem;
+    display: flex;
+    flex-direction: column;
+    /* height: 375px; */
+    align-items: center;
+    justify-content:center;
+    margin:0 1rem;
+}
+
+.card-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    background-color:white;
+}
+
+.card-img{
+    width:100%;
+    /* height:280px; */
+}
+
+.card-title{
+    padding:0;
+    margin: 0.3rem 0;
+}
+
+.card-description{
+    margin:0.3rem 0;
+}
+
+.card-price{
+    margin:0;
+    font-weight: bold;
+}
+
+.card-badge{
+    position:absolute;
+    top:30px;
+    left:0px;
+    background-color:var(--primary-color);
+}
+
+.card-dismiss{
+    position:absolute;
+    top:0px;
+    right:5px;
+    width:20px;
+    height:20px;
+    text-align: center;
+}
+
+.card-shadow{
+    box-shadow: 0px 0px 20px black;
+}
+
+.card-horizontal{
+    /* border:1px solid black; */
+    position:relative;
+    width:23rem;
+    display: flex;
+    /* align-items: center; */
+    justify-content:center;
+    margin:0 1rem;
+}
+
+.card-horizontal-img{
+    width:10rem;
+}
+
+.card-text-horizontal{
+    background-color:white;
 }
