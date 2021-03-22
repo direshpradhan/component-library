@@ -277,3 +277,35 @@ body{
 .card-text-horizontal{
     background-color:white;
 }
+
+/* Images */
+.img-container{
+    display: flex;
+    justify-content: center;
+    margin:2rem 0;
+}
+
+.img-responsive{
+    width:40vw;
+    margin: 0 2rem;
+}
+
+.img-circular{
+    margin: 0 1rem;
+    border-radius:50%;
+}
+
+.img-small{
+    width:75px;
+    height:75px;
+}
+
+.img-medium{
+    width:100px;
+    height:100px;
+}
+
+.img-large{
+    width:150px;
+    height:150px;
+}
