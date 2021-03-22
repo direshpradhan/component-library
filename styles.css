@@ -309,3 +309,61 @@ body{
     width:150px;
     height:150px;
 }
+
+/* Input */
+
+.input-container{
+    position:relative;
+    margin:1rem 0;
+}
+
+.input-container .input-normal{
+    padding:0.75rem 1rem;
+    border:1px solid gray;
+    outline:none;
+    border-radius: 0.5rem;
+    width:20%;
+}
+
+.input-normal:focus{
+    border:2px solid var(--primary-color);
+}
+
+.input-container label{
+    position: absolute;
+    left: 0.75rem;
+    top: 0.75rem;
+    background-color: white;
+    color: var(--gray);
+    transition: all 0.2s ease-in-out;
+}
+
+.input-normal:focus+label {
+    top:-8px;
+    padding: 0 0.45rem;
+    color:var(--primary-color);
+}
+
+.input-container .input-error{
+    padding:0.75rem 1rem;
+    border:1px solid red;
+    outline:none;
+    border-radius: 0.5rem;
+    width:20%;
+}
+
+.input-error:focus{
+    border:2px solid red;
+}
+
+.input-error:focus+label {
+    top:-8px;
+    padding: 0 0.3rem;
+    color:red;
+}
+
+.input-container .label-error{
+    color:#F87171;
+}
+
+
