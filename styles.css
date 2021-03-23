@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: #E5E7EB;
+    background-color: #F9FAFB;
     /* max-width: 800px;
     margin:auto; */
 }
@@ -472,4 +472,42 @@ body{
 .grid-item{
     border:1px solid black;
     padding:1rem;
+}
+
+/* Text Utilities */
+.heading-lg{
+    font-size:2rem;
+    /* font-size: 26px; */
+    font-weight: bold;
+}
+
+.heading-md{
+    font-size:1.5rem;
+    /* font-size: 20px; */
+    font-weight: bold;
+}
+.heading-sm{
+    font-size:1.25rem;
+    /* font-size: 16px; */
+    font-weight: bold;
+}
+
+.text-small{
+    font-size:13.5px;
+}
+
+.text-gray{
+    color:var(--dark-gray);
+}
+
+.text-left{
+    text-align:left;
+}
+
+.text-centre{
+    text-align:center;
+}
+
+.text-right{
+    text-align:right;
 }
