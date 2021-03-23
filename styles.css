@@ -414,3 +414,45 @@ body{
     font-weight: bold;
 }
 
+
+.modal{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    border:1px solid black;
+    /* padding:0.5rem; */
+    max-width: 40%;
+    height:auto;
+    bottom:5%;
+}
+
+.modal .modal-title{
+    display:flex;
+    background-color:black;
+    color:white;
+    padding:1rem 0.5rem;
+    font-size: 1.25rem;
+}
+
+.modal-title > .btn-close{
+    position:absolute;
+    top:1.3rem;
+    right:1rem;
+    border: none;
+    background-color: none;
+    outline:none;
+}
+
+.modal-body{
+    padding:1rem ;
+}
+
+.modal-body button{
+    background-color:black;
+    color:white;
+    border:none;
+    outline:none;
+    padding:0.5rem 1rem;
+    margin:1rem 0rem;
+    font-size: 1rem;
+}
