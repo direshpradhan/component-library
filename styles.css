@@ -420,10 +420,10 @@ body{
     display:flex;
     flex-direction: column;
     border:1px solid black;
-    /* padding:0.5rem; */
     max-width: 40%;
     height:auto;
     bottom:5%;
+    margin:2rem 0;
 }
 
 .modal .modal-title{
@@ -455,4 +455,21 @@ body{
     padding:0.5rem 1rem;
     margin:1rem 0rem;
     font-size: 1rem;
+}
+
+.grid-column-3{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-gap:2rem;
+}
+
+.grid-column-2{
+    display:grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-gap:2rem;
+}
+
+.grid-item{
+    border:1px solid black;
+    padding:1rem;
 }
