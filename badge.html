@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Component Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.15.3/css/all.css">
+</head>
+<body>
+    <div class="main">
+        <nav class="navigation">
+            <h2>Navbrand</h2>
+            <ul class="list-non-bullet">
+                <!-- <li class="list-item-inline"><a class="link" href="#">Home</a></li> -->
+                <li class="list-item-inline"><a class="link" href="./introduction.html">Documentation</a></li>
+                <li class="list-item-inline"><a class="link" href="#"><i class="fab fa-github fa-lg"></i></a></li>
+            </ul>
+        </nav>
+        <div class="sidebar">
+            <h2 style="text-align:center">Components</h2>
+            <ul class="list-non-bullet list-sidebar">
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="./alert.html">Alert</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="./avatar.html">Avatar</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link link-active" href="./badge.html">Badge</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="./button.html">Button</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="./card.html">Card</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="./grid.html">Grid</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="./image.html">Image</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="./input.html">Input</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="./modal.html">Modal</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="./navigation.html">Navigation</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="./text-utilities.html">Text Utilities</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="component-desc">
+            <h2>Badge</h2>
+            <span style="align-self:center" class="badge">New</span>
+            <div class="carbon-container">
+                <iframe 
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=blackboard&wt=none&l=javascript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14.5px&lh=133%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522badge%2522%253ENew%253C%252Fspan%253E"
+                    style="width:100%;height:100px;border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+            <h4>Badge on Icon:</h4>
+            <div style="display:flex;justify-content:center">
+                <div class="badge-icon">
+                    <img class="icon" src="static/images/bell.svg" alt="Notification Bell">
+                    <span class="badge-top">25</span>
+                </div>
+            </div>
+            <div class="carbon-container">
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=blackboard&wt=none&l=javascript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14.5px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522badge-icon%2522%253E%250A%2509%253Cimg%2520class%253D%2522icon%2522%2520src%253D%2522static%252Fimages%252Fbell.svg%2522%2520alt%253D%2522Notification%2520Bell%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-top%2522%253E25%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                    style="width: 100%; height: 150px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+            
+            <h4>Badge on Avatar:</h4>
+            <div style="display:flex; justify-content:center">
+                <div class="badge-avatar">
+                    <img src="static/images/avatar.png" alt="Avatar" class="avatar-circular avatar-sm">
+                    <span class="badge-bottom online"></span>
+                </div>
+
+                <div class="badge-avatar">
+                    <img src="static/images/avatar.png" alt="Avatar" class="avatar-circular avatar-sm">
+                    <span class="badge-bottom offline"></span>
+                </div>
+            </div>
+            <div class="carbon-container">
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=blackboard&wt=none&l=javascript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14.5px&lh=133%25&si=false&es=2x&wm=false&code=%252F*%2520badge%2520with%2520avatar%28online%29%2520*%252F%2520%250A%253Cdiv%2520%2520class%253D%2522badge-avatar%2522%253E%250A%2520%2520%2509%253Cimg%2520src%253D%2522static%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%2520class%253D%2522avatar-circular%2520avatar-sm%2522%253E%250A%2509%253Cspan%2520class%253D%2522badge-bottom%2520online%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%252F*%2520badge%2520with%2520avatar%28offline%29%2520*%252F%250A%253Cdiv%2520class%253D%2522badge-avatar%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522static%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%2520class%253D%2522avatar-circular%2520avatar-sm%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-bottom%2520offline%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                    style="width: 100%;height:300px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

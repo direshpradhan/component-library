@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Component Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.15.3/css/all.css">
+</head>
+<body>
+    <div class="main">
+        <nav class="navigation">
+            <h2>Navbrand</h2>
+            <ul class="list-non-bullet">
+                <!-- <li class="list-item-inline"><a class="link" href="#">Home</a></li> -->
+                <li class="list-item-inline"><a class="link" href="./introduction.html">Documentation</a></li>
+                <li class="list-item-inline"><a class="link" href="#"><i class="fab fa-github fa-lg"></i></a></li>
+            </ul>
+        </nav>
+        <div class="sidebar">
+            <h2 style="text-align:center">Components</h2>
+            <ul class="list-non-bullet list-sidebar">
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="./alert.html">Alert</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="./avatar.html">Avatar</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="./badge.html">Badge</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link link-active" href="./button.html">Button</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="./card.html">Card</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="./grid.html">Grid</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="./image.html">Image</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="./input.html">Input</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="./modal.html">Modal</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="./navigation.html">Navigation</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="./text-utilities.html">Text Utilities</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="component-desc">
+            <h2>Button</h2>
+            <h4>Primary Button</h4>
+            <div style="display:flex; justify-content:center">
+                <button style="margin:0 1rem" class="btn btn-primary btn-sm">Primary </button>
+                <button style="margin:0 1rem" class="btn btn-primary btn-md">Primary </button>
+                <button style="margin:0 1rem" class="btn btn-primary btn-lg">Primary </button>
+            </div>
+            <div class="carbon-container">
+                <!-- <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=blackboard&wt=none&l=javascript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14.5px&lh=133%25&si=false&es=2x&wm=false&code=%252F*small%2520button*%252F%250A%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520btn-sm%2522%253EPrimary%253C%252Fbutton%253E%250A%250A%252F*medium%2520button*%252F%250A%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520btn-md%2522%253EPrimary%253C%252Fbutton%253E%250A%250A%252F*large%2520button*%252F%250A%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520btn-lg%2522%253EPrimary%253C%252Fbutton%253E"
+                    style="width:100%; height: 226px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe> -->
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=blackboard&wt=none&l=javascript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14.5px&lh=133%25&si=false&es=2x&wm=false&code=%252F*primary%2520button*%252F%250A%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520btn-sm%2522%253EPrimary%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520btn-md%2522%253EPrimary%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520btn-lg%2522%253EPrimary%253C%252Fbutton%253E"
+                    style="width:100%; height: 150px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+            <h4>Secondary Button</h4>
+            <div style="display:flex;justify-content:center;margin-top:2rem">
+                <button style="margin:0 1rem" class="btn btn-secondary btn-sm">Secondary </button>
+                <button style="margin:0 1rem" class="btn btn-secondary btn-md">Secondary </button>
+                <button style="margin:0 1rem" class="btn btn-secondary btn-lg">Secondary </button>
+            </div>
+            <div class="carbon-container">
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=blackboard&wt=none&l=javascript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14.5px&lh=133%25&si=false&es=2x&wm=false&code=%252F*secondary%2520button*%252F%250A%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2520btn-sm%2522%253ESecondary%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2520btn-md%2522%253ESecondary%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2520btn-lg%2522%253ESecondary%253C%252Fbutton%253E"
+                    style="width: 100%; height: 150px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+            
+            <h4>Icon Button</h4>
+            <div style="display:flex;flex-direction:column;">
+                <button style="align-self:center" class="btn btn-icon"><img class="icon1" src="static/images/bookmark.svg" alt=""> Bookmark</button>
+                <div class="carbon-container">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=blackboard&wt=none&l=javascript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14.5px&lh=133%25&si=false&es=2x&wm=false&code=%252F*icon%2520button*%252F%250A%253Cbutton%2520class%253D%2522btn%2520btn-icon%2522%253E%253Cimg%2520class%253D%2522icon1%2522%2520src%253D%2522static%252Fimages%252Fbookmark.svg%2522%2520alt%253D%2522%2522%253E%2520Bookmark%253C%252Fbutton%253E"
+                        style="width: 100%; height: 131px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </div>
+            
+            <h4>Floating action Button</h4>
+            <div style="display:flex;flex-direction:column;" class="float-action">
+                <button style="align-self:center" class="btn-fl">+</button>
+            </div>
+            
+            <div class="carbon-container">
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=blackboard&wt=none&l=javascript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14.5px&lh=133%25&si=false&es=2x&wm=false&code=%252F*%2520floating%2520action%2520button%2520*%252F%250A%253Cdiv%2520class%253D%2522float-action%2522%253E%250A%2509%253Cbutton%2520class%253D%2522btn-float%2522%253E%252B%253C%252Fbutton%253E%250A%253C%252Fdiv%253E"
+                    style="width:100%; height: 150px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+            
+
+        </div>
+    </div>
+</body>
+</html>
