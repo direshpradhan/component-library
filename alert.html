@@ -6,21 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Component Library</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="components/components.css">
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.15.3/css/all.css">
 </head>
 <body>
     <div class="main">
         <nav class="navigation">
-            <h2>Navbrand</h2>
-            <ul class="list-non-bullet">
-                <!-- <li class="list-item-inline"><a class="link" href="#">Home</a></li> -->
-                <li class="list-item-inline"><a class="link" href="./introduction.html">Documentation</a></li>
+            <a class="link" href="./index.html">
+                <div class="brand-name">
+                    <img class="img-logo" src="static/images/logo3.png" />
+                    <span class="navbrand">Quantum UI</span>
+                </div>
+            </a>
+            <!-- <ul class="list-non-bullet">
+                <li class="list-item-inline"><a class="link" href="#">Home</a></li>
+                <li class="list-item-inline"><a class="link" href="./introduction.html">Docs</a></li>
                 <li class="list-item-inline"><a class="link" href="#"><i class="fab fa-github fa-lg"></i></a></li>
-            </ul>
+            </ul> -->
         </nav>
         <div class="sidebar">
-            <h2 style="text-align:center">Components</h2>
+            <h4 style="text-align:center"><a style="color:black" href="index.html">Introduction</a></h4>
+            <h4 style="text-align:center">Components</h4>
             <ul class="list-non-bullet list-sidebar">
                 <li class="sidebar-item">
                     <a class="sidebar-link link-active" href="./alert.html">Alert</a>
@@ -59,8 +65,11 @@
         </div>
 
         <div class="component-desc">
-            <h2>Alert</h2>
+            <h2 class="heading">Alert</h2>
+            <div class="description">An alert conveys an important message with very few words which notifies users about what action happened without interrupting them.</div>
+            <div class="divider"></div>
             <div class="alert-container">
+                <h4 class="heading">Success Alert</h4>
                 <div style="width:75%; margin:0 auto" class="alert alert-success">
                     This is a success alert
                 </div>
@@ -71,7 +80,8 @@
                         sandbox="allow-scripts allow-same-origin">
                     </iframe>   
                 </div>
-                
+                <div class="divider"></div>
+                <h4 class="heading">Warning Alert</h4>
                 <div style="width:75%; margin:0 auto" class="alert alert-warning">
                     This is a warning alert
                 </div>
@@ -82,7 +92,8 @@
                         sandbox="allow-scripts allow-same-origin">
                     </iframe>
                 </div>
-
+                <div class="divider"></div>
+                <h4 class="heading">Error Alert</h4>
                 <div style="width:75%; margin:0 auto" class="alert alert-error">
                     This is an error alert
                 </div>
@@ -93,6 +104,11 @@
                         sandbox="allow-scripts allow-same-origin">
                     </iframe>
                 </div>
+
+                <footer class="footer">
+                    <a class="footer-link" href="./index.html" style="color:black">< Introduction</a>
+                    <a class="footer-link"  href="./avatar.html" style="color:black">Avatar ></a>
+                </footer>
             </div>
         </div>
     </div>

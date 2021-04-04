@@ -4,23 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Component Library</title>
+    <title>Quantum UI</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="components/components.css">
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.15.3/css/all.css">
 </head>
 <body>
     <div class="main">
         <nav class="navigation">
-            <h2>Navbrand</h2>
-            <ul class="list-non-bullet">
-                <!-- <li class="list-item-inline"><a class="link" href="#">Home</a></li> -->
-                <li class="list-item-inline"><a class="link" href="./introduction.html">Documentation</a></li>
+            <a class="link" href="./index.html">
+                <div class="brand-name">
+                    <img class="img-logo" src="./static/images/logo3.png" />
+                    <span class="navbrand">Quantum UI</span>
+                </div>
+            </a>
+            
+            <!-- <ul class="list-non-bullet">
+                <li class="list-item-inline"><a class="link" href="#">Home</a></li>
+                <li class="list-item-inline"><a class="link" href="./introduction.html">Docs</a></li>
                 <li class="list-item-inline"><a class="link" href="#"><i class="fab fa-github fa-lg"></i></a></li>
-            </ul>
+            </ul> -->
         </nav>
         <div class="sidebar">
-            <h2 style="text-align:center">Components</h2>
+            <h4 style="text-align:center"><a style="color:black" href="index.html">Introduction</a></h4>
+            <h4 style="text-align:center">Components</h4>
             <ul class="list-non-bullet list-sidebar">
                 <li class="sidebar-item">
                     <a class="sidebar-link" href="./alert.html">Alert</a>
@@ -59,8 +66,10 @@
         </div>
 
         <div class="component-desc">
-            <h2>Avatar</h2>
-            <h4>Circular Avatars:</h4>
+            <h2 class="heading">Avatar</h2>
+            <div class="description">An avatar is used to represent the user's profile picture or their initials.</div>
+            <div class="divider"></div>
+            <h4 class="heading">Circular Avatars</h4>
             <div class="avatar-container">
                 <img src="static/images/avatar.png" alt="Avatar" class="avatar-circular avatar-sm">
                 <img src="static/images/avatar.png" alt="Avatar" class="avatar-circular avatar-md">
@@ -73,8 +82,8 @@
                     sandbox="allow-scripts allow-same-origin">
                 </iframe>
             </div>
-
-            <h4>Rounded Avatars:</h4>
+            <div class="divider"></div>
+            <h4 class="heading">Rounded Avatars</h4>
             <div class="avatar-container">
                 <img src="static/images/avatar.png" alt="Avatar" class="avatar-rounded avatar-sm">
                 <img src="static/images/avatar.png" alt="Avatar" class="avatar-rounded avatar-md">
@@ -87,6 +96,11 @@
                     sandbox="allow-scripts allow-same-origin">
                 </iframe>
             </div>
+
+            <footer class="footer">
+                <a class="footer-link" href="./avatar.html" style="color:black">< Alert</a>
+                <a class="footer-link"  href="./badge.html" style="color:black">Badge ></a>
+            </footer>
         </div>
     </div>
 </body>

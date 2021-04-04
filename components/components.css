@@ -1,14 +1,13 @@
 :root{
     --primary-color: #2563EB;
+    /* --primary-color:#03045e; */
     --off-white: #F3F4F6;
     --dark-gray: #6B7280;
     --gray: gray;
 }
 
 body{
-    /* background-color: #F9FAFB; */
-    /* max-width: 800px;
-    margin:auto; */
+    box-sizing: border-box;
 }
 
 /* Avatars */
@@ -124,8 +123,6 @@ body{
     display: flex;
     width: 50px;
     height: 50px;
-    /* background-color: rgb(41, 41, 41); */
-    border:1px solid rgb(173, 173, 173);
     border-radius: 50%;
     justify-content:center;
     align-items: center;
@@ -156,7 +153,6 @@ body{
 
 .btn{
     border:none;
-    outline:none;
     padding:0.5rem;
     cursor:pointer;
 }
@@ -244,7 +240,7 @@ body{
 }
 
 .card{
-    /* border:1px solid black; */
+    border:1px solid var(--gray);
     position:relative;
     width:14rem;
     display: flex;
@@ -253,6 +249,7 @@ body{
     align-items: center;
     justify-content:center;
     margin:0 1rem;
+
 }
 
 .card-text{
@@ -466,7 +463,7 @@ body{
     max-width: 70vh;
     height:auto;
     bottom:5%;
-    margin:4rem 0;
+    margin:2.5rem 0 1rem;
 }
 
 .modal .modal-title{

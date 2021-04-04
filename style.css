@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
 :root{
     --content-color:#F9FAFB;
@@ -7,24 +7,27 @@
 
 body{
     margin:0;
-    font-family: 'PT Sans', sans-serif;
-    background-color:#1F2937;
+    font-family: 'Roboto', sans-serif;
+    /* background-color:var(--content-color); */
     box-sizing: border-box;
 }
 
 .main{
     display:grid;
-    grid-template-columns: 15% 85%;
+    grid-template-columns: 20% 80%;
     grid-template-areas: 
-                "nav nav"
-                "sidebar description";
+                "nav nav "
+                "sidebar description ";
+    margin:auto;
+    /* width:95% */
+    
 }
 
 .intro{
-    border:1px solid black;
-    padding:1.5rem 0.25rem;
-    width:80%;
-    margin:2rem auto;
+    padding:1.5rem 0;
+    width:100%;
+    margin:0 auto;
+    flex-grow: 1;
 }
 
 .import-url{
@@ -36,7 +39,6 @@ body{
     width:90%;
     word-break: break-all;
     margin: auto;
-    /* color:white; */
 }
 
 .navigation{
@@ -45,24 +47,57 @@ body{
     justify-content:space-between;
     align-items:center;
     grid-area: nav;
-    border-bottom: 1px solid black;
-    background-color:var(--nav-color);
-    color:white;
+    margin-bottom: 1rem;
+    /* border-bottom: 1px solid var(--gray); */
+    /* background-color:var(--primary-color); */
+    /* color:white;
+    background-color: #121214; */
 }
 
-.navigation .link{
-    color:white;
+.brand-name{
+    display: inline-flex;
+    align-items: center;
+    margin:0.75rem 0;
+    cursor: pointer;
+
+}
+.navbrand{
+    margin-left:0.5rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.heading{
+    font-weight:425;
+    letter-spacing: 0.25px;
+}
+
+.img-logo{
+    margin-left: 3rem;
+    width: 2.5rem;
+    padding:0;
+}
+
+.link{
+    color:black;
+}
+
+.navigation .link:hover{
+    font-weight: 700;
+}
+
+.navigation .active{
+    font-weight: 700;
 }
 
 .sidebar{
     grid-area: sidebar;
-    border-right:1px solid black;
+    margin:0 auto;
     overflow-y:auto;
-    height:95vh;
+    height:100vh;
     position: sticky;
     top:5%;
-    background-color:var(--nav-color);
-    color:white;
 }
 
 .list-sidebar{
@@ -73,14 +108,15 @@ body{
 }
 
 .sidebar-item{
-    padding:1rem;
+    padding:0.5rem 1rem;
 }
 
 .sidebar-link{
-    color:white;
+    color:black;
     text-decoration:none;
-    font-size: large;
+    font-size: 0.9rem;
     padding:0.5rem;
+    /* font-weight: 400; */
 }
 
 .sidebar-link:hover{
@@ -96,9 +132,10 @@ body{
 .component-desc{
     display: flex;
     flex-direction: column;
+    
     grid-area: description;
-    padding:0 1.5rem;
-    background-color: var(--content-color);
+    padding:0 2rem;
+    /* background-color: var(--content-color); */
 }
 
 .avatar-container{
@@ -110,6 +147,7 @@ body{
 .alert-container{
     display: flex;
     flex-direction: column;
+    /* margin-top: 2rem; */
 }
 
 .carbon-container{
@@ -124,29 +162,62 @@ body{
     font-size: x-large;
     text-align: center;
     border:none;
-    outline:none;
     background-color:var(--dark-gray);
     cursor: pointer;
     margin:1rem 0 0;
 }
 
+.footer{
+    display: flex;
+    justify-content:space-between;
+    margin:2rem 0;
+}
+
+.footer-link{
+    color: black;
+}
+
+.footer-link:hover{
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.description{
+    font-weight:400;
+    font-size:0.9rem;
+    line-height: 1.5rem;
+    letter-spacing:0.25px;
+}
+
+.divider{
+    background-color:rgba(0, 0, 0, 0.1);
+    height:1px;
+    margin: 1rem 0;
+    width:100%;
+
+}
 
 
-@media screen and (max-width: 800px) {
+
+@media screen and (max-width: 768px) {
+
+    .sidebar{
+        display:none;
+    }
+
+    .img-logo{
+        margin-left:0.5rem;
+    }
 
     .main{
-        display:grid;
-        grid-template-columns: 15% 85%;
-        grid-template-areas: 
-                    "nav nav"
-                    "description description";
+        display:flex;
+        flex-direction: column;
     }
 
     .intro{
-        border:1px solid black;
-        padding:1rem;
-        width:80%;
-        margin:auto;
+        width:100%;
+        margin:0 auto;
+        flex-grow: 1;
     }
     
     .import-url{
@@ -159,3 +230,11 @@ body{
         word-break: break-all;
         margin:auto;
     }
+
+}  
+
+
+
+
+
+

@@ -6,21 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Component Library</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="components/components.css">
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.15.3/css/all.css">
 </head>
 <body>
     <div class="main">
         <nav class="navigation">
-            <h2>Navbrand</h2>
-            <ul class="list-non-bullet">
-                <!-- <li class="list-item-inline"><a class="link" href="#">Home</a></li> -->
-                <li class="list-item-inline"><a class="link" href="./introduction.html">Documentation</a></li>
+            <a class="link" href="./index.html">
+                <div class="brand-name">
+                    <img class="img-logo" src="./static/images/logo3.png" />
+                    <span class="navbrand">Quantum UI</span>
+                </div>
+            </a>
+            <!-- <ul class="list-non-bullet">
+                <li class="list-item-inline"><a class="link" href="#">Home</a></li>
+                <li class="list-item-inline"><a class="link" href="./introduction.html">Docs</a></li>
                 <li class="list-item-inline"><a class="link" href="#"><i class="fab fa-github fa-lg"></i></a></li>
-            </ul>
+            </ul> -->
         </nav>
         <div class="sidebar">
-            <h2 style="text-align:center">Components</h2>
+            <h4 style="text-align:center"><a style="color:black" href="index.html">Introduction</a></h4>
+            <h4 style="text-align:center">Components</h4>
             <ul class="list-non-bullet list-sidebar">
                 <li class="sidebar-item">
                     <a class="sidebar-link" href="./alert.html">Alert</a>
@@ -59,27 +65,24 @@
         </div>
 
         <div class="component-desc">
-            <h2>Button</h2>
-            <h4>Primary Button</h4>
+            <h2 class="heading">Button</h2>
+            <div class="description">Buttons are one of the most important element of a website. Buttons allow users to perform actions with a single click.</div>
+            <div class="divider"></div>
+            <h4 class="heading">Primary Button</h4>
             <div style="display:flex; justify-content:center">
                 <button style="margin:0 1rem" class="btn btn-primary btn-sm">Primary </button>
                 <button style="margin:0 1rem" class="btn btn-primary btn-md">Primary </button>
                 <button style="margin:0 1rem" class="btn btn-primary btn-lg">Primary </button>
             </div>
             <div class="carbon-container">
-                <!-- <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=blackboard&wt=none&l=javascript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14.5px&lh=133%25&si=false&es=2x&wm=false&code=%252F*small%2520button*%252F%250A%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520btn-sm%2522%253EPrimary%253C%252Fbutton%253E%250A%250A%252F*medium%2520button*%252F%250A%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520btn-md%2522%253EPrimary%253C%252Fbutton%253E%250A%250A%252F*large%2520button*%252F%250A%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520btn-lg%2522%253EPrimary%253C%252Fbutton%253E"
-                    style="width:100%; height: 226px; border:0; transform: scale(1); overflow:hidden;"
-                    sandbox="allow-scripts allow-same-origin">
-                </iframe> -->
                 <iframe
                     src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=blackboard&wt=none&l=javascript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14.5px&lh=133%25&si=false&es=2x&wm=false&code=%252F*primary%2520button*%252F%250A%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520btn-sm%2522%253EPrimary%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520btn-md%2522%253EPrimary%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520btn-lg%2522%253EPrimary%253C%252Fbutton%253E"
                     style="width:100%; height: 150px; border:0; transform: scale(1); overflow:hidden;"
                     sandbox="allow-scripts allow-same-origin">
                 </iframe>
             </div>
-
-            <h4>Secondary Button</h4>
+            <div class="divider"></div>
+            <h4 class="heading">Secondary Button</h4>
             <div style="display:flex;justify-content:center;margin-top:2rem">
                 <button style="margin:0 1rem" class="btn btn-secondary btn-sm">Secondary </button>
                 <button style="margin:0 1rem" class="btn btn-secondary btn-md">Secondary </button>
@@ -92,8 +95,8 @@
                     sandbox="allow-scripts allow-same-origin">
                 </iframe>
             </div>
-            
-            <h4>Icon Button</h4>
+            <div class="divider"></div>
+            <h4 class="heading">Icon Button</h4>
             <div style="display:flex;flex-direction:column;">
                 <button style="align-self:center" class="btn btn-icon"><img class="icon1" src="static/images/bookmark.svg" alt=""> Bookmark</button>
                 <div class="carbon-container">
@@ -104,8 +107,8 @@
                     </iframe>
                 </div>
             </div>
-            
-            <h4>Floating action Button</h4>
+            <div class="divider"></div>
+            <h4 class="heading">Floating action Button</h4>
             <div style="display:flex;flex-direction:column;" class="float-action">
                 <button style="align-self:center" class="btn-fl">+</button>
             </div>
@@ -117,7 +120,11 @@
                     sandbox="allow-scripts allow-same-origin">
                 </iframe>
             </div>
-            
+    
+            <footer class="footer">
+                <a class="footer-link" href="./badge.html" style="color:black">< Badge</a>
+                <a class="footer-link"  href="./card.html" style="color:black">Card ></a>
+            </footer>
 
         </div>
     </div>

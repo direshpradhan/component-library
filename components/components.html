@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Component Library</title>
+    <link rel="stylesheet" href="components.css">
+</head>
+<body>
+    <h2>Avatar</h2>
+        <img src="/static/images/avatar.png" alt="Avatar" class="avatar-circular avatar-sm">
+        <img src="/static/images/avatar.png" alt="Avatar" class="avatar-rounded avatar-sm">
+    <hr>
+        
+    <h2>Alert</h2>
+        <div class="alert alert-success">
+            This is a success alert
+        </div>
+        <div class="alert alert-warning">
+            This is a warning alert
+        </div>
+        <div class="alert alert-error">
+            This is an error alert
+        </div>
+    <hr>
+
+    <h2>Badge</h2>
+        <span class="badge">New</span>
+        
+        <h4>Badge on Icon:</h4>
+        <div class="badge-icon">
+            <img class="icon" src="/static/images/bell.svg" alt="Notification Bell">
+            <span class="badge-top">25</span>
+        </div>
+        
+        <h4>Badge on Avatar:</h4>
+        <div class="badge-avatar">
+            <img src="/static/images/avatar.png" alt="Avatar" class="avatar-circular avatar-sm">
+            <span class="badge-bottom online"></span>
+        </div>
+    <hr>        
+         
+    <h2>Button</h2>
+        <button class="btn btn-primary">Primary Button</button>
+        <button class="btn btn-secondary">Secondary Button</button>
+        <button class="btn btn-icon"><img class="icon1" src="static/images/bookmark.svg" alt=""> Bookmark</button>
+        <div class="float-action">
+            <button class="btn-float">+</button>
+        </div>
+    <hr>
+
+    <h2>Card</h2>
+    <div class="card-list">
+        <!-- <h4>Normal Card</h4> -->
+        <div class="card">
+            <img class="card-img" src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/4318138/2018/5/4/11525433792765-HERENOW-Men-Black-Printed-Round-Neck-T-shirt-2881525433792598-1.jpg" alt="">
+            <div class="card-text">
+                <h4 class="card-title">HERE&NOW</h4>
+                <p class="card-description">Men Printed Round Neck T-shirt</p>
+                <p class="card-price">Rs. 500</p>
+            </div>
+        </div>
+
+        <!-- <h4>Card with badges</h4> -->
+        <div class="card">
+            <img class="card-img" src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/4318138/2018/5/4/11525433792765-HERENOW-Men-Black-Printed-Round-Neck-T-shirt-2881525433792598-1.jpg" alt="">
+            <div class="card-text">
+                <h4 class="card-title">HERE&NOW</h4>
+                <p class="card-description">Men Printed Round Neck T-shirt</p>
+                <p class="card-price">Rs. 500</p>
+            </div>
+            <span class="badge card-badge">New</span>
+        </div>
+
+        <!-- <h4>Card with dismiss</h4> -->
+        <div class="card">
+            <img class="card-img" src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/4318138/2018/5/4/11525433792765-HERENOW-Men-Black-Printed-Round-Neck-T-shirt-2881525433792598-1.jpg" alt="">
+            <div class="card-text">
+                <h4 class="card-title">HERE&NOW</h4>
+                <p class="card-description">Men Printed Round Neck T-shirt</p>
+                <p class="card-price">Rs. 500</p>
+            </div>
+            <span class="badge card-badge">New</span>
+            <span class="card-dismiss"><img src="./static/images/close.svg" alt=""></span>
+        </div>
+
+        <div class="card card-shadow">
+            <img class="card-img" src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/4318138/2018/5/4/11525433792765-HERENOW-Men-Black-Printed-Round-Neck-T-shirt-2881525433792598-1.jpg" alt="">
+            <div class="card-text">
+                <h4 class="card-title">HERE&NOW</h4>
+                <p class="card-description">Men Printed Round Neck T-shirt</p>
+                <p class="card-price">Rs. 500</p>
+            </div>
+            <span class="badge card-badge">New</span>
+            <span class="card-dismiss"><img src="/static/images/close.svg" alt=""></span>
+        </div>
+        <!-- <div class="card">
+            <div>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut nemo, accusamus quos minima illo sit. Facere voluptatem placeat aliquid debitis ipsum minus architecto repellendus excepturi, odit, nulla sit, aliquam quis?
+            </div>
+        </div> -->
+    </div>
+
+    <h4>Horizontal Card</h4>
+    <div class="card-horizontal">
+        <img class="card-horizontal-img" src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/4318138/2018/5/4/11525433792765-HERENOW-Men-Black-Printed-Round-Neck-T-shirt-2881525433792598-1.jpg" alt="">
+        <div class="card-text-horizontal">
+            <h4 class="card-title">HERE&NOW</h4>
+            <p class="card-description">Men Printed Round Neck T-shirt</p>
+            <p class="card-price">Rs. 500</p>
+        </div>
+        <span class="badge card-badge">New</span>
+        <span class="card-dismiss"><img src="/static/images/close.svg" alt=""></span>
+    </div>
+
+    <h2>Image</h2>
+    <h4>Responsive Images</h4>
+    <div class="img-container">
+        <img class="img-responsive" src="/static/images/sample-image.jpg" alt="">
+        <img class="img-responsive" src="/static/images/sample-image1.jpg" alt="">
+    </div>
+
+    <h4>Circular Images:</h4>
+    <div>
+        <img class="img-circular img-small" src="/static/images/sample-image.jpg" alt="">
+        <img class="img-circular img-medium" src="/static/images/sample-image.jpg" alt="">
+        <img class="img-circular img-large" src="/static/images/sample-image.jpg" alt="">  
+    </div>
+
+    <h2>Input</h2>
+    <!-- <textarea name="" id="" cols="30" rows="10"></textarea> -->
+    <div class="input-container">
+        <input class="input-normal" type="text" >
+        <label>Name</label>
+    </div>
+
+    <div class="input-container">
+        <input class="input-error" type="text" >
+        <label class="label-error">Error</label>
+    </div>
+
+    <h2>Navbar</h2>
+    <nav class="navbar">
+        <div class="nav-brand">Navbar</div>
+        <ul class="list-non-bullet">
+            <li class="list-item-inline">
+                <a class="link " href="#">Home</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="#">About</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <h2>Modal</h2>
+    <div class="modal">
+        <div class="modal-title"> Modal Title</div>
+        <div class="modal-body"> 
+            <div class="modal-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, optio aliquid perferendis dignissimos, ipsam laborum minima vero harum, suscipit quidem beatae porro. Atque distinctio sit rem cumque, quos quae fuga!
+            </div>
+            <button>Close</button>
+            <button>Save</button>
+        </div> 
+    </div>
+
+    <h2>Grid</h2>
+    <h4>Three items in a Grid</h4>
+    <div class="grid-column-3">
+        <div class="grid-item">
+            
+        </div>
+        <div class="grid-item">
+            
+        </div>
+        <div class="grid-item">
+            
+        </div>
+
+        <div class="grid-item">
+            
+        </div>
+        <div class="grid-item">
+            
+        </div>
+        <div class="grid-item">
+            
+        </div>
+
+    </div>
+
+    <h4>Two items in a Grid</h4>
+    <div class="grid-column-2">
+        <div class="grid-item">
+            
+        </div>
+        <div class="grid-item">
+            
+        </div>
+        <div class="grid-item">
+            
+        </div>
+        <div class="grid-item">
+            
+        </div>
+    </div>
+
+    <h2>Text Utilities</h2>
+        
+        <div class="heading-sm">Headings:</div>
+        <div style="border:1px solid black; padding:0.5rem">
+            <div class="heading-lg">Large sized heading</div>
+            <div class="heading-md">Medium sized heading</div>
+            <div class="heading-sm">Small sized heading</div>
+        </div>    
+        <br>
+
+        <div class="heading-sm">Text:</div>
+        <div style="border:1px solid black; padding:0.5rem">
+            <div class="text-small">This is small sized text</div>
+            <div class="text-gray" style="font-size:large">This is gray text</div>
+            <div class="text-left">Left aligned text</div>
+            <div class="text-centre">This is centered text</div>
+            <div class="text-right">Right aligned text</div>
+        </div>
+
+    <h2>List</h2>
+    <ul class="simple-list">
+        <li class="simple-list-item">List Item 1</li>
+        <li class="simple-list-item">List Item 1</li>
+        <li class="simple-list-item">List Item 1</li>
+        <li class="simple-list-item">List Item 1</li>
+        <li class="simple-list-item">List Item 1</li>
+        <li class="simple-list-item">List Item 1</li>
+    </ul>
+</body>
+</html>

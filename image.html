@@ -6,21 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Component Library</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="components/components.css">
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.15.3/css/all.css">
 </head>
 <body>
     <div class="main">
         <nav class="navigation">
-            <h2>Navbrand</h2>
-            <ul class="list-non-bullet">
-                <!-- <li class="list-item-inline"><a class="link" href="#">Home</a></li> -->
-                <li class="list-item-inline"><a class="link" href="./introduction.html">Documentation</a></li>
+            <a class="link" href="./index.html">
+                <div class="brand-name">
+                    <img class="img-logo" src="./static/images/logo3.png" />
+                    <span class="navbrand">Quantum UI</span>
+                </div>
+            </a>
+            <!-- <ul class="list-non-bullet">
+                <li class="list-item-inline"><a class="link" href="#">Home</a></li>
+                <li class="list-item-inline"><a class="link" href="./introduction.html">Docs</a></li>
                 <li class="list-item-inline"><a class="link" href="#"><i class="fab fa-github fa-lg"></i></a></li>
-            </ul>
+            </ul> -->
         </nav>
         <div class="sidebar">
-            <h2 style="text-align:center">Components</h2>
+            <h4 style="text-align:center"><a style="color:black" href="index.html">Introduction</a></h4>
+            <h4 style="text-align:center">Components</h4>
             <ul class="list-non-bullet list-sidebar">
                 <li class="sidebar-item">
                     <a class="sidebar-link" href="./alert.html">Alert</a>
@@ -59,8 +65,10 @@
         </div>
 
         <div class="component-desc">
-            <h2>Image</h2>
-            <h4>Responsive Images</h4>
+            <h2 class="heading">Image</h2>
+            <div class="description">Images are used to make the website visually appealing and the user experience great. </div>
+            <div class="divider"></div>
+            <h4 class="heading">Responsive Images</h4>
             <div class="img-container">
                 <img class="img-responsive" src="./static/images/sample-image.jpg" alt="">
                 <img class="img-responsive" src="./static/images/sample-image1.jpg" alt="">
@@ -74,7 +82,8 @@
                 </iframe>
             </div>
 
-            <h4>Circular Images:</h4>
+            <div class="divider"></div>
+            <h4 class="heading">Circular Images:</h4>
             <div style="align-self:center">
                 <img class="img-circular img-small" src="./static/images/sample-image.jpg" alt="">
                 <img class="img-circular img-medium" src="./static/images/sample-image.jpg" alt="">
@@ -88,6 +97,12 @@
                     sandbox="allow-scripts allow-same-origin">
                 </iframe>
             </div>
+
+            <footer class="footer">
+                <a class="footer-link" href="./grid.html" style="color:black">< Grid</a>
+                <a class="footer-link"  href="./input.html" style="color:black">Input ></a>
+            </footer>
+
         </div>
     </div>
 </body>

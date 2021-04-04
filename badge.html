@@ -6,21 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Component Library</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="components/components.css">
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.15.3/css/all.css">
 </head>
 <body>
     <div class="main">
         <nav class="navigation">
-            <h2>Navbrand</h2>
-            <ul class="list-non-bullet">
-                <!-- <li class="list-item-inline"><a class="link" href="#">Home</a></li> -->
-                <li class="list-item-inline"><a class="link" href="./introduction.html">Documentation</a></li>
+            <a class="link" href="./index.html">
+                <div class="brand-name">
+                    <img class="img-logo" src="./static/images/logo3.png" />
+                    <span class="navbrand">Quantum UI</span>
+                </div>
+            </a>
+            <!-- <ul class="list-non-bullet">
+                <li class="list-item-inline"><a class="link" href="#">Home</a></li>
+                <li class="list-item-inline"><a class="link" href="./introduction.html">Docs</a></li>
                 <li class="list-item-inline"><a class="link" href="#"><i class="fab fa-github fa-lg"></i></a></li>
-            </ul>
+            </ul> -->
         </nav>
         <div class="sidebar">
-            <h2 style="text-align:center">Components</h2>
+            <h4 style="text-align:center"><a style="color:black" href="index.html">Introduction</a></h4>
+            <h4 style="text-align:center">Components</h4>
             <ul class="list-non-bullet list-sidebar">
                 <li class="sidebar-item">
                     <a class="sidebar-link" href="./alert.html">Alert</a>
@@ -59,7 +65,10 @@
         </div>
 
         <div class="component-desc">
-            <h2>Badge</h2>
+            <h2 class="heading">Badge</h2>
+            <div class="description"> Badge are generally used to display numbers, online / offline status, depending on where they are used.They are usually positioned at top-right or botton-right of the parent component.</div>
+            <div class="divider"></div>
+            <h4 class="heading">Normal Badge</h4>
             <span style="align-self:center" class="badge">New</span>
             <div class="carbon-container">
                 <iframe 
@@ -68,7 +77,8 @@
                     sandbox="allow-scripts allow-same-origin">
                 </iframe>
             </div>
-            <h4>Badge on Icon:</h4>
+            <div class="divider"></div>
+            <h4 class="heading">Badge on Icon</h4>
             <div style="display:flex;justify-content:center">
                 <div class="badge-icon">
                     <img class="icon" src="static/images/bell.svg" alt="Notification Bell">
@@ -82,8 +92,8 @@
                     sandbox="allow-scripts allow-same-origin">
                 </iframe>
             </div>
-            
-            <h4>Badge on Avatar:</h4>
+            <div class="divider"></div>
+            <h4 class="heading">Badge on Avatar</h4>
             <div style="display:flex; justify-content:center">
                 <div class="badge-avatar">
                     <img src="static/images/avatar.png" alt="Avatar" class="avatar-circular avatar-sm">
@@ -102,6 +112,12 @@
                     sandbox="allow-scripts allow-same-origin">
                 </iframe>
             </div>
+
+            <footer class="footer">
+                <a class="footer-link" href="./avatar.html" style="color:black">< Avatar</a>
+                <a class="footer-link"  href="./button.html" style="color:black">Button ></a>
+            </footer>
+
         </div>
     </div>
 </body>
